@@ -122,6 +122,7 @@ export default {
               password: ""
             };
             alert(response.data.message);
+            this.$router.push("/Login");
           })
           .catch(error => {
             alert(error.response.data.message);
